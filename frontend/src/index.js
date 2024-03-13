@@ -9,11 +9,11 @@ import ChatProvider from "./Context/ChatProvider";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   //whatever state we create in our context api will be accessible to our whole app using ChatProvider
-  <ChatProvider>
-    <BrowserRouter>
+  <BrowserRouter>
+    <ChatProvider>
       <ChakraProvider>
         <App />
       </ChakraProvider>
-    </BrowserRouter>
-  </ChatProvider>
+    </ChatProvider>
+  </BrowserRouter>
 );
